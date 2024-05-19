@@ -7,12 +7,172 @@
 
 % Pas na deze inleidende paragraaf komt de eerste sectiehoofding.
 
-Dit hoofdstuk bevat je literatuurstudie. De inhoud gaat verder op de inleiding, maar zal het onderwerp van de bachelorproef *diepgaand* uitspitten. De bedoeling is dat de lezer na lezing van dit hoofdstuk helemaal op de hoogte is van de huidige stand van zaken (state-of-the-art) in het onderzoeksdomein. Iemand die niet vertrouwd is met het onderwerp, weet nu voldoende om de rest van het verhaal te kunnen volgen, zonder dat die er nog andere informatie moet over opzoeken \autocite{Pollefliet2011}.
+Voordat we aan dit onderzoek kunnen beginnen, moeten we verschillende aspecten onderzoeken. Aangezien dit onderzoek meerdere domeinen bestrijkt, is het essentieel om deze eerst op te splitsen per domein en de benodigde informatie te verzamelen. Zodra we voldoende informatie hebben verzameld, kunnen we verbanden leggen tussen de verschillende domeinen om ze samen te voegen en te laten functioneren als een samenhangend geheel. \newline
 
-Je verwijst bij elke bewering die je doet, vakterm die je introduceert, enz.\ naar je bronnen. In \LaTeX{} kan dat met het commando \texttt{$\backslash${textcite\{\}}} of \texttt{$\backslash${autocite\{\}}}. Als argument van het commando geef je de ``sleutel'' van een ``record'' in een bibliografische databank in het Bib\LaTeX{}-formaat (een tekstbestand). Als je expliciet naar de auteur verwijst in de zin (narratieve referentie), gebruik je \texttt{$\backslash${}textcite\{\}}. Soms is de auteursnaam niet expliciet een onderdeel van de zin, dan gebruik je \texttt{$\backslash${}autocite\{\}} (referentie tussen haakjes). Dit gebruik je bv.~bij een citaat, of om in het bijschrift van een overgenomen afbeelding, broncode, tabel, enz. te verwijzen naar de bron. In de volgende paragraaf een voorbeeld van elk.
+Voor deze onderzoeksvraag kunnen we alles opdelen in drie grote domeinen. Allereerst het theoretisch-psychologische aspect, dat zich specifiek richt op ADHD en zijn betekenis. Vervolgens het meer praktische domein van inclusief ontwerp en de bijbehorende implicaties. Tot slot het domein van kalenders, inclusief hun structuur, vereisten en algemene opstelling. \newline
 
-\textcite{Knuth1998} schreef een van de standaardwerken over sorteer- en zoekalgoritmen. Experten zijn het erover eens dat cloud computing een interessante opportuniteit vormen, zowel voor gebruikers als voor dienstverleners op vlak van informatietechnologie~\autocite{Creeger2009}.
+Zodra we deze informatie hebben vergaard, kunnen we aan de slag met het opstellen van een stappenplan en het ontwikkelen van een theoretische oplossing voor het onderzoek. Laten we nu beginnen met het verzamelen van deze informatie.
 
-Let er ook op: het \texttt{cite}-commando voor de punt, dus binnen de zin. Je verwijst meteen naar een bron in de eerste zin die erop gebaseerd is, dus niet pas op het einde van een paragraaf.
 
-\lipsum[7-20]
+\section{ADHD: Definitie en Inhoudelijke Verkenning}
+
+Om te starten is het belangrijk op te merken dat ADHD relatief recent gedefinieerd is. Het is pas erkend zoals we het vandaag de dag definiëren sinds het einde van de 19e eeuw \autocite{lange2010history}. Hoewel er in de geschiedenis vermeldingen zijn van zaken als concentratieproblemen en gebrek aan morele controle etc. \autocite{lange2010history}, werd dit niet beschouwd als Attention Deficit Hyperactivity Disorder (ADHD).\newline
+
+\subsection{Maar wat is ADHD nu precies?}
+ADHD wordt beschreven als de meest voorkomende neurologische gedragsstoornis. Het is geen ziekte maar eerder een groep symptomen die een gemeenschappelijke gedragswijze vertegenwoordigt. De symptomen kunnen onder andere emotionele, psychologische en/of leerproblemen omvatten \autocite{Furman2005whatisadhd}. \newline
+
+ADHD kan zich op drie verschillende manieren manifesteren. Het type ADHD waarmee je wordt gediagnosticeerd, hangt af van welke symptomen het meest dominant zijn \autocite{diamond2005attention}. Hieronder worden ze kort uitgelegd. \newline
+
+Het eerste subtype van ADHD staat bekend als \textbf{"Inattentive ADHD"}. Individuen met dit subtype ervaren uitdagingen bij onder andere: het plannen en voltooien van taken, het volgen van aanwijzingen of discussies en het opvolgen van instructies. Ze zijn vatbaar voor afleiding en hebben moeite met het onthouden van de details van dagelijkse routines. Dit subtype wordt vaak geïdentificeerd als ADD, een afkorting die verwijst naar het overwegend onoplettende aspect van de stoornis \autocite{wilcox2023what}. \newline
+
+Het tweede subtype van ADHD, bekend als \textbf{"Hyperactive-Impulsive"}, wordt gekenmerkt door excessieve spraakzaamheid en onderbrekingen van anderen, voornamelijk veroorzaakt door een onvermogen om te wachten op hun beurt of om op passende momenten te spreken. Bovendien vertonen individuen met dit subtype vaak andere gedragskenmerken, zoals frequent wiebelen als gevolg van een moeilijkheid om lang stil te zitten. Dit kan bijvoorbeeld optreden tijdens het volgen van lessen of bij het bekijken van een film. Personen met Hyperactive-Impulsive ADHD ervaren ook een gevoel van rusteloosheid en vertonen impulsief gedrag, wat kan leiden tot een verhoogd risico op ongelukken en verwondingen \autocite{swanson1998attention}.\newline
+
+Het laatste subtype is een combinatie van de voorgaande twee subtypes. Individuen met gecombineerde ADHD vertonen symptomen van zowel het onoplettende als het hyperactief-impulsieve type ADHD in gelijke mate. Er zijn dus geen dominerende symptomen \autocite{weiss2003chart}. \newline
+
+Voor dit onderzoek is vooral het eerste type van belang. Om een kalender te kunnen ontwikkelen die geoptimaliseerd is voor mensen met ADHD, is het onderzoeken van het onoplettend type hier de sleutel toe.\newline
+
+Uit eigen speculatie komt voort dat vooral de aandachtstoornis een groot deel van de oorzaak is waarom kalenderapplicaties aan optimalisatie toe zijn. Dit omdat deze mensen een gestructureerd houvast nodig hebben om taken gedaan te krijgen, en een omgeving die hun dit aanbiedt. \newline
+
+Om dit tastbaar te maken, is het nu van belang om dieper in te gaan op het inattentive ADHD subtype, om zo een beter begrip te krijgen van de vereisten en behoeften ervan. Op die manier kunnen we ook de speculatie ondersteunen.
+\subsection{Inattentive ADHD}
+Volgens de diagnostische criteria van de “American Psychiatric Association” zijn er negen symptomen die verband houden met aandachtsproblemen. Hoewel bijna iedereen soms aandachtsproblemen ervaart, hebben mensen met de overwegend onoplettende presentatie van ADHD vaak de volgende symptomen. Deze symptomen kunnen zich opdringen en interfereren met hun dagelijkse functioneren op het werk, met familieleden of in sociale situaties. De negen symptomen die verband houden met de overwegend onoplettende type van ADHD zijn de volgende: 
+\begin{itemize}
+    \item Let niet goed op details of maakt onzorgvuldige fouten bij school- of werktaken.
+    \item Heeft problemen om gefocust te blijven op taken of activiteiten, zoals tijdens lezingen, gesprekken of lang lezen.
+    \item Lijkt niet te luisteren wanneer er tegen hem/haar/hun wordt gesproken (d.w.z. lijkt ergens anders te zijn).
+    \item Volgt instructies niet op en voltooit schoolwerk, klusjes of taken niet (kan aan taken beginnen maar verliest snel de focus).
+    \item Heeft problemen met het organiseren van taken en werk (gaat bijvoorbeeld niet goed om met de tijd; heeft rommelig, ongeorganiseerd werk; mist deadlines).
+    \item Vermijdt of heeft een hekel aan taken die langdurige mentale inspanning vergen, zoals het opstellen van rapporten en het invullen van formulieren.
+    \item Raakt vaak dingen kwijt die nodig zijn voor taken of het dagelijks leven, zoals schoolpapieren, boeken, sleutels, portemonnee, mobiele telefoon en bril.
+    \item Is gemakkelijk afgeleid.
+    \item Vergeet dagelijkse taken, zoals klusjes doen en boodschappen doen. Oudere tieners en volwassenen vergeten misschien terug te bellen, rekeningen te betalen en afspraken na te komen.  
+\end{itemize} \autocite{elmaghraby2022what} \newline
+
+
+De beschreven symptomen bieden een diepgaand inzicht in de complexiteit van ADHD, waarbij verschillende scenario's van disfunctioneren binnen diverse contexten worden belicht. Hoewel het begrip van deze symptomen van cruciaal belang is voor ons onderzoek, is het essentieel om te benadrukken dat ADHD geen geneesbare aandoening is, maar eerder een neurologische gedragsstoornis. Het doel is dan ook niet om de oorzaken van ADHD te verklaren, maar om de uitdagingen waarmee deze individuen worden geconfronteerd, te begrijpen en deze tegemoetkomen. Met een duidelijk beeld van de symptomen kunnen we nu ons onderzoek voortzetten naar bestaande principes binnen de inclusieve wereld die specifieke symptomen kunnen compenseren.\newline
+
+Voor het verdere verloop zal ik enkele van de meest relevante symptomen (RELSY) voor dit onderzoek markeren als volgt:
+\begin{itemize}[label=-]
+    \item RELSY1 : “Heeft problemen met het organiseren van taken en werk”
+    \item RELSY2:  “Is gemakkelijk afgeleid” 
+    \item RELSY3:  “Vergeet dagelijkse taken”   
+    \item RELSY4:  “Heeft problemen om gefocust te blijven op taken of activiteiten”
+    \item RELSY5: “Vermijdt of heeft een hekel aan taken die langdurige mentale inspanning vergen”
+\end{itemize}
+Deze vijf symptomen, zoals eerder vermeld, zijn van bijzonder belang voor dit onderzoek. Dit zijn symptomen waarbij een kalender kan helpen, en waarmee we rekening moeten houden bij het ontwerp. Denk bijvoorbeeld aan een eenvoudig ontwerp met minimale afleiding en voldoende stimulansen/ prikkels om de aandacht vast te houden, terwijl het tegelijkertijd de mogelijkheid biedt om alles ordelijk te organiseren. \newline
+
+In het komende segment zullen we onderzoeken aan welke vereisten een kalenderapplicatie moet voldoen en hoe deze van nut kunnen zijn. Deze zullen we later organiseren met behulp van de MoSCoW-Methode om het belang van deze vereisten mooi in kaart te zetten. \newline
+
+In de daaropvolgende sectie (Inclusief ontwerpen van de kalender) zullen we dieper ingaan op de aspecten die kunnen bijdragen aan het verlichten van symptomen aan de hand van inclusieve technieken en zullen we de connectie met de kalenderapplicatie onderzoeken. Op deze manier streven we ernaar om een bruikbaar ontwerp te ontwikkelen. 
+
+\section{Kalenderapplicatie}
+Voordat we kunnen onderzoeken hoe we een kalenderapplicatie kunnen optimaliseren voor personen met ADHD, moeten we eerst de basis requirements van een gewone kalenderapplicatie oplijsten en onderzoeken. Een effectieve definitie van eisen is essentieel om ervoor te zorgen dat het eindproduct voldoet aan de behoeften van gebruikers, daarom is het oplijsten van requirements een cruciale stap bij het opbouwen en ontwikkelen van een applicatie \autocite{bahill2017discovering}. Zo kan men zien waaraan de applicatie moet voldoen en met welke specifieke eisen we rekening moeten houden.  Dit kunnen we doen aan de hand van de MoSCoW-methode, omdat we dan ook zicht hebben op welke eisen er prioritair zijn \autocite{kravchenko2022ranking}. \newline
+
+De MoSCoW-methode is een gekende prioriteringstechniek en de naam is een afkorting die respectievelijk staat voor “Must-have”, “Should-have”, “Could-have” en “Won’t-have”.  Deze houden dus het volgende in: 
+\begin{itemize}[label=-]
+    \item \textbf{Must-have}: Dit zijn de essentiële vereisten die absoluut noodzakelijk zijn voor het succes van het project. Als deze vereisten niet worden vervuld, wordt het project als mislukt beschouwd.
+    \item \textbf{Should-have}: Deze vereisten zijn belangrijk maar niet zo kritiek als "must have" vereisten. Het zijn aspecten die de functionaliteit, bruikbaarheid of waarde van het product verbeteren, maar het project kan nog steeds succesvol worden afgerond zonder ze te implementeren.
+    \item \textbf{Could-have}: Dit zijn wenselijke vereisten, maar ze zijn niet van cruciaal belang. Het zijn functies of eigenschappen die de gebruikerservaring kunnen verbeteren of de waarde van het product kunnen vergroten, maar ze zijn niet noodzakelijk voor de basisfunctionaliteit.
+    \item \textbf{Won't-have}: Deze categorie bevat vereisten die bewust zijn uitgesloten.
+\end{itemize} \autocite{kravchenko2022ranking}. \newline
+
+Dan kunnen we nu een lijst van requirements opstellen waaraan een kalender moet voldoen, deze zal nu nog niet geprioriteerd zijn. Dat zal gebeuren in het hoofdstuk ‘Methodologie’ volgens de hiervoor vermelde MoSCoW-methode. Als leidraad om te weten waar een kalender aan moet voldoen en moet inhouden is er onder andere gekeken naar de requirements lijst van de ‘University of Washington Calendar’ \autocite{UW2006CALENDAR} .  De lijst van basiseisen ziet er als volgt uit:
+
+\begin{itemize}
+    
+    \item	Weekoverzicht
+    \item	Maandoverzicht
+    \item	Dag raadplegen
+    \item	Taken toevoegen
+    \item	Afspraken en andere zaken kunnen inplannen
+    \item	Categorieën een kleur geven
+    \item	Ingeplande taken, afspraken en andere zaken kunnen raadplegen
+    \item	Taken, afspraken en ander ingeplande zaken kunnen beheren (aanpassen, verwijderen, …)
+    \item	Mogelijkheden om taken, afspraken en andere zaken te herhalen voor x aantal dagen/ weken/ maanden
+    \item	‘Andere zaken’, taken en afspraken kunnen opdelen in categorieën
+    \item	Jaaroverzicht
+    \item	Navigeren tussen weken, maanden, jaren (afhankelijk van view)
+    \item	Groepskalender
+    \item	Externe kalenders importeren
+    \item	Notificaties
+    \item	Light/Dark mode
+    
+\end{itemize}
+
+Deze requirements zijn die van een gewone kalenderapplicatie. Deze zijn dus zeker nog niet definitief en zullen nog aangevuld worden met de bevindingen van het volgende onderdeel over het inclusief ontwerp. Daar zullen we mogelijks nog requirements tegenkomen en deze verder aanvullen in de lijst tot zijn definitieve vorm.
+
+\section{Inclusief ontwerpen van de kalender}
+In dit deel van de literatuurstudie gaan we opzoeken wat inclusief ontwerp is en welke concepten er al bestaan die we kunnen gebruiken voor dit onderzoek. Indien nodig zullen we mogelijks zelf met nieuwe ontwerpen moeten komen op basis van theoretische bevindingen tijdens dit deel van het onderzoek. \newline
+
+Inclusief ontwerp draait om het nemen van doordachte ontwerpbewuste beslissingen, op basis van een beter begrip van de diversiteit onder gebruikers, wat helpt om zoveel mogelijk mensen te betrekken. Dit omvat variatie in capaciteiten, behoeften en doelen \autocite{clarkson2013inclusive}. Het wordt erkend als een drijvende kracht voor toegankelijkheid en sociale gelijkheid in onder andere het ontwerp van producten, diensten en omgevingen. \newline
+
+Echter moet dit voor psychische aandoeningen nog grondig en effectief worden toegepast op sommige vlakken enerzijds omdat er weinig begrip is voor sommige van deze aandoeningen \autocite{yonghun2015inclusive}. Dit is wat we eerder in deze paper ook al hadden geformuleerd. Maar anderzijds ook omdat de conventionele toepassing en interpretatie van inclusief ontwerp zich voornamelijk richt op fysieke inclusie, bruikbaarheid en gebruiksvriendelijkheid, in plaats van op de psychologische/sociale dimensie \autocite{yonghun2015inclusive}. \newline
+
+Dit wil zeggen dat de literatuur vol zit met inclusieve oplossingen voor fysieke aandoeningen, zoals bijvoorbeeld voor slechtziende personen, kleurenblindheid etc. Dat betekent niet dat psychologische inclusie onbelangrijk is; integendeel, er wordt ook veel onderzoek naar gedaan. Echter, is dit uitdagender omdat er meer diepgaand onderzoek voor nodig is \autocite{yonghun2015inclusive}.  \newline
+
+Dit is ook exact wat in deze paper gebeurt, namelijk een meer verdiepend onderzoek naar de aandoening waar we inclusief voor wensen te zijn. 
+Om dit deel in goede banen te leiden gaan we het opsplitsen per eerder gemarkeerde relevante symptomen (RELSY#). Zo kunnen we per RELSY een gericht onderzoekje doen en zo de best inclusieve oplossing vinden. Voor dit gedeelte gaan we RELSY2 en RELSY4 samennemen omdat het hoofdzakelijk gaat over afleiding. \newline
+
+Het is belangrijk om te vermelden dat de zoektocht naar oplossingen niet beperkt is tot enkel een UI ontwerp, maar deze kan ook betrekking hebben met de werking van de kalender en/of extra features. Dit is een technisch onderzoek dus er zal ook naar implementatie gekeken worden.
+
+\subsection{RELSY 1: Organisatie}
+Een kalenderapplicatie is een zeer goede tool voor personen met ADHD om zich te organiseren, echter hebben ze het er niet allemaal even makkelijk mee om een kalender te gebruiken en bestaat er ondertussen ook al organisatie-\autocite{langberg2008organizational}. Dit is ook hoofdzakelijk waarom dit onderzoek is opgestart, omdat een kalender zo belangrijk is voor de organisatie van mensen met ADHD maar deze er niet altijd overweg mee kunnen of slecht gebruiken. \newline
+
+Daarom is het vooral belangrijk dat de kalender een voor de hand liggend ontwerp heeft die niet te moeilijk is. Er zijn meerdere opties die toegevoegd kunnen worden aan een kalender om deze iets aangenamer te maken. Eerst en vooral zijn categorieën en een bijbehorende kleurcode belangrijk.   Het gebruik van kleuren zorgt voor extra stimuli, wat de mogelijkheid van een persoon om informatie te verwerken verbetert en de prestaties die ze kunnen behalen verhoogt \autocite{zentall1985information}.  Dit is vooral gunstig voor mensen met ADHD, omdat kleuren hen kunnen helpen bij het organiseren en structureren van informatie. Door verschillende categorieën of taken te markeren met verschillende kleuren, kunnen ze sneller visuele en cognitieve verbindingen maken, wat kan leiden tot een betere focus en efficiëntie. Kleurgebruik kan ook de leesbaarheid en het begrip van tekst verbeteren, waardoor de informatieverwerking wordt vergemakkelijkt voor mensen met ADHD, die soms moeite hebben met het vasthouden van de aandacht \autocite{zentall1986performance}. \newline
+
+Een ‘Brain Dump’ is ook een gekend hulpmiddel voor personen met ADHD. Omdat ze soms vergeetachtig zijn of omdat ze soms interessante ideeën hebben die ze ergens moeten kunnen neerschrijven \autocite{allen2023chaostoclarity} kan het interessant zijn om deze functie te implementeren in de kalender zodat alles zich op dezelfde plek bevindt. Brain Dumps zijn niet alleen goed voor het bijhouden van ideeën maar ook voor het verlichten van stress \autocite{wisner2023braindump}. Het wordt therapeutisch ook vaak gebruikt en helpt de persoon bij het verwerken van emoties. \newline
+
+Een laatste belangrijk puntje bij het organiseren is de mogelijkheid om te prioriteren. Dit is essentieel omdat het helpt om tijd en energie effectiever te benutten. Taken op volgorde van belangrijkheid te zetten biedt de mogelijkheid om zich te richten op wat echt telt en zo kan er doelgericht worden gewerkt. Bovenop voorkomt het uitstelgedrag en vermindert stress, waardoor personen met ADHD productiever en succesvoller kunnen zijn bij het verrichten van taken \autocite{ramsay2024cbt}.
+
+\subsection{RELSY 2 \& RELSY 4: Problemen om gefocust te blijven op taken en makkelijk afgeleid}
+
+Personen met ADHD hebben moeite om gefocust te blijven op sommige taken omdat ze lagere dopamine-levels hebben \autocite{oades2008dopamine}. Een mogelijke oplossing hiervoor is een soort van ‘reward-system’ \autocite{volkow2011motivation} implementeren in de kalender die je beloont als je taken afrondt. Men kan dan denken aan een soort ingebouwde shop waar je “customizables” kunt kopen met punten die je verdient door het afronden van grote/ kleine taken. Dit zou enerzijds kunnen helpen om voor genoeg prikkels te zorgen maar men mag het niet te overdreven maken dat het een bron van afleiding vormt. Een shop zou hier te afleidend zijn en is dus een slechte optie. Een ander gekend systeem die veel meer geschikt is voor dit scenario zijn badges. Badges helpen met het gemotiveerd blijven en streven naar het volgende doel, level, etc. \autocite{shields2017digital}. \newline
+
+Een idee hier zou bijvoorbeeld zijn badges in de vorm van medailles. Je krijgt per dag een rankbadge in functie van hoeveel procent van de taken van die dag je hebt gedaan. Zo wordt de persoon elke dag opnieuw beloond voor een goede inspanning, en zorgt het voor extra motivatie \autocite{ortega2019reward}. Deze badges worden bijgehouden, zo kan de gebruiker een grote collectie aan badges verzamelen.  
+
+\subsection{RELSY 3: Vergeten van taken}
+Voor het vergeten van taken springt er na onderzoek duidelijk een oplossing naar boven, namelijk het gebruik van notificatie en reminders \autocite{jamieson2022AppleTree}. Dit is een zeer goede oplossing om een taak niet te vergeten. Echter zijn er ook 2 puntjes waar op gelet moet worden. Ten eerste is het zo dat dit systeem pas maximale effectiviteit heeft als de persoon daadwerkelijk aan de taak begint als de notificatie verschijnt en het niet uitstelt \autocite{iqbal2008effects}, anders verhoogt de kans dat de gebruiker de taak weer vergeet.\newline
+
+Ten tweede is het ook belangrijk dat tijdens het uitvoeren van een taak er geen notificaties binnenkomen, want dit heeft een zeer negatief effect op de concentratie \autocite{horvitz2001notification}. Het is bewezen dat notificaties die binnenkomen terwijl een persoon bezig is, deze persoon afleiden \autocite{iqbal2010notifications}. Dit bevordert dan weer RELSY2 & 4 en moet dus vermeden worden. \newline
+  
+Voor het eerste puntje kunnen we niet echt iets ontwerpen, maar voor het tweede echter kunnen we een optie implementeren die ervoor zorgt dat de kalender zelf geen notificaties zal sturen gedurende de opgegeven periode van de taak en een berichtje tonen dat de gebruiker aanraadt om alle meldingen uit te schakelen. \newline
+
+Een overzicht van taken kan ook helpen bij het vergeten van taken te plannen \autocite{morris2004cognitive}. Omdat de gebruiker dan een overzicht heeft op wat er moet gebeuren bevordert dit het inplannen, dit heeft als positief gevolg dat er minder over het hoofd wordt gezien. 
+
+\subsection{RELSY 5: Vermijdt lastige/ lange taken}
+Het procrastineren en vermijden van grote/ lastige taken kan verholpen worden door deze op te delen in kleinere haalbare stukken \autocite{gupta2023understanding}. Dit omdat het dan meer beheersbaar wordt en men een beter zicht heeft over wat er effectief moet gebeuren en dat is minder afschrikkend.  \newline
+
+Hiervoor zou er en functie kunnen geïmplementeerd worden waar de gebruiker een ‘grote taak’ kan opgeven en deze logisch onderverdelen in kleinere taken die gelinkt zijn. De kleine taken verwijzen steeds naar de grote taak en er zou een soort progressie-bar vorderen op de grote taak naarmate er kleine worden afgewerkt. 
+Op deze manier wordt de gebruiker niet afgeschrikt van het grote geheel maar kan deze een meer beheersbaar geheel van kleine taken manipuleren en krijgt de gebruiker zicht op de totale progressie. 
+
+\subsection{Samenvatting van de oplossingen}
+Alle symptomen werden overlopen en er is voor elk een relevante oplossing gevonden. Deze nieuwe oplossingen zorgen ervoor dat we de lijst van requirements opgesteld in het vorige hoofdstuk moeten aanvullen met de nieuwgevonden requirements nodig voor het maken van een aangepaste kalender voor mensen met ADHD. \newline
+  
+De nieuwe requirements zijn het toevoegen van een “brain dump”, een overzicht van in te plannen zaken, de mogelijkheid om taken te prioriteren, beloningssysteem die de gebruiker beloont bij het verrichten van zaken en tot slot de mogelijkheid om een grote taak op te delen in kleinere logische taken. Echter moeten we ook rekening houden dat notificaties en de mogelijkheden om categorieën een kleur te geven van groter belang zijn bij deze kalender dan een normale kalender. Dus als deze normaal gezien bij de “could have” zouden staan, zullen ze nu bij de “should haves” moeten worden geplaatst.\newline
+
+Dan ziet de aangepaste en definitieve lijst van requirements er als volgt uit:
+\begin{itemize}
+   \item	Weekoverzicht
+   \item	Maandoverzicht
+   \item	Dag raadplegen
+   \item	Taken toevoegen
+   \item	Afspraken en andere zaken kunnen inplannen
+   \item	Categorieën een kleur geven
+   \item	Ingeplande taken, afspraken en andere zaken kunnen raadplegen
+   \item	Taken, afspraken en ander ingeplande zaken kunnen beheren (aanpassen, verwijderen, …)
+   \item	Mogelijkheden om taken, afspraken en andere zaken te herhalen voor x aantal dagen/ weken/ maanden
+   \item	‘Andere zaken’, taken en afspraken kunnen opdelen in categorieën
+   \item	Jaaroverzicht
+   \item	Navigeren tussen weken, maanden, jaren (afhankelijk van view)
+   \item	Groepskalender
+   \item	Externe kalenders importeren
+   \item	Notificaties
+   \item	Light/Dark mode
+   \item	Overzicht van in te plannen alle taken/ events
+   \item	Toevoegen van een ‘Brain Dump’ 
+   \item	Prioritering van taken
+   \item	Een badge verdienen bij het verrichten van taken
+   \item	Mogelijkheid om grote/lange taken op te delen in kleinere taken
+\end{itemize}
+
+Nu de lijst van requirements compleet is kunnen we beginnen aan het ontwikkelingsproces van de applicatie.
